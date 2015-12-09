@@ -6,7 +6,7 @@
 
     <groupId>com.okta</groupId>
     <artifactId>okta-sdk</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
     <properties>
         <jackson.version>2.5.0</jackson.version>
         <aperture-reporter.version>1.0.0-000079.000042.e302966</aperture-reporter.version>
