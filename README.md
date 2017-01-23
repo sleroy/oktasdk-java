@@ -2,10 +2,11 @@
 
 [ ![Download](https://api.bintray.com/packages/tocea/okta-sdk-java/oktasdk-java/images/download.svg) ](https://bintray.com/tocea/okta-sdk-java/oktasdk-java/_latestVersion)
 
+## How to use the library :
 
 The library may be downloaded with Bintray :
 
-Maven Settings:
+**Maven Settings:**
 
     <?xml version="1.0" encoding="UTF-8" ?>
     <settings xsi:schemaLocation='http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd'
@@ -42,7 +43,7 @@ Maven Settings:
     </settings>
 
 
-Maven  POM:
+**Maven  POM:**
 
     <dependency>
       <groupId>com.okta</groupId>
@@ -51,7 +52,8 @@ Maven  POM:
       <type>pom</type>
     </dependency>
 
-Gradle :
+**Gradle :**
+
     repositories {
         maven {
             url  "http://dl.bintray.com/tocea/okta-sdk-java"
@@ -64,7 +66,7 @@ Gradle :
 
 This SDK is in EA, so all existing features are supported by Okta in a production setting
 
-To build and install:
+**To build and install**:
 
 1. Clone the repo
 2. Navigate to the repo directory. It should contain pom.xml
