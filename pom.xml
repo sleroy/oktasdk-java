@@ -4,7 +4,7 @@
 
     <groupId>com.okta</groupId>
     <artifactId>okta-sdk</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.4</version>
     <packaging>jar</packaging>
 
     <name>${project.groupId}:${project.artifactId}</name>
@@ -133,34 +133,19 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.5</version>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                        <configuration>
-                            <keyname>${gpg.keyname}</keyname>
-                            <passphraseServerId>${gpg.keyname}</passphraseServerId>
-                        </configuration>
-                    </execution>
-                </executions>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <additionalparam>-Xdoclint:none</additionalparam>
+                </configuration>
             </plugin>
+
         </plugins>
     </build>
     <distributionManagement>
         <repository>
-            <id>master</id>
-            <name>master-releases</name>
-            <url>https://artifacts.aue1d.saasure.com/artifactory/topic</url>
+            <id>bintray-tocea-okta-sdk-java</id>
+            <name>tocea-okta-sdk-java</name>
+            <url>https://api.bintray.com/maven/tocea/okta-sdk-java/oktasdk-java/;publish=1</url>
         </repository>
-        <snapshotRepository>
-            <id>master</id>
-            <name>master-snapshots</name>
-            <url>https://artifacts.aue1d.saasure.com/artifactory/topic</url>
-        </snapshotRepository>
     </distributionManagement>
 </project>
