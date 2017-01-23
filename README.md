@@ -1,5 +1,67 @@
 # oktasdk-java
 
+[ ![Download](https://api.bintray.com/packages/tocea/okta-sdk-java/oktasdk-java/images/download.svg) ](https://bintray.com/tocea/okta-sdk-java/oktasdk-java/_latestVersion)
+
+
+The library may be downloaded with Bintray :
+
+Maven Settings:
+
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <settings xsi:schemaLocation='http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd'
+              xmlns='http://maven.apache.org/SETTINGS/1.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+
+        <profiles>
+            <profile>
+                <repositories>
+                    <repository>
+                        <snapshots>
+                            <enabled>false</enabled>
+                        </snapshots>
+                        <id>bintray-tocea-okta-sdk-java</id>
+                        <name>bintray</name>
+                        <url>http://dl.bintray.com/tocea/okta-sdk-java</url>
+                    </repository>
+                </repositories>
+                <pluginRepositories>
+                    <pluginRepository>
+                        <snapshots>
+                            <enabled>false</enabled>
+                        </snapshots>
+                        <id>bintray-tocea-okta-sdk-java</id>
+                        <name>bintray-plugins</name>
+                        <url>http://dl.bintray.com/tocea/okta-sdk-java</url>
+                    </pluginRepository>
+                </pluginRepositories>
+                <id>bintray</id>
+            </profile>
+        </profiles>
+        <activeProfiles>
+            <activeProfile>bintray</activeProfile>
+        </activeProfiles>
+    </settings>
+
+
+Maven  POM:
+
+    <dependency>
+      <groupId>com.okta</groupId>
+      <artifactId>okta-sdk</artifactId>
+      <version>0.0.4</version>
+      <type>pom</type>
+    </dependency>
+
+Gradle :
+    repositories {
+        maven {
+            url  "http://dl.bintray.com/tocea/okta-sdk-java"
+        }
+    }
+
+
+    compile 'com.okta:okta-sdk:0.0.4'
+
+
 This SDK is in EA, so all existing features are supported by Okta in a production setting
 
 To build and install:
