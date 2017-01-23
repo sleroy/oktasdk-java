@@ -31,7 +31,7 @@ public class LogsApiClientTest {
     // Query Parameters and Validation . Note that order is not guaranteed so StringContains needs to be used
     // StartTime parameter
     private static final long UNIX_TIME_START = 1477353600000L; // Oct 25 2016 00:00:00 GMT
-    private static final String SINCE_SUBSTRING = "since=2016-10-25T00%3A00%3A00.000Z";
+    private static final String SINCE_SUBSTRING = "2016-10-25T02%3A00%3A00.000%2B02%3A00";
 
     // limit parameter
     private static final int LIMIT = 10;
