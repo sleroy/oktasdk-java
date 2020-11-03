@@ -36,7 +36,7 @@
     <properties>
         <httpclient.version>4.5.2</httpclient.version>
         <jackson.version>2.5.0</jackson.version>
-        <joda-time.version>2.7</joda-time.version>
+        <joda-time.version>2.10.6</joda-time.version>
         <maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
         <slf4j-api.version>1.7.10</slf4j-api.version>
         <testng.version>6.8.17</testng.version>
